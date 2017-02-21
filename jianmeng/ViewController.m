@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "MenuView.h"
+#import "LeftMenuView.h"
+#import "configTableViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<HomeMenuViewDelegate>
+
+@property (nonatomic ,strong)MenuView   * menu;
 
 @end
 
@@ -16,14 +21,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view setBackgroundColor:[UIColor lightGrayColor]];
+    
+    
+    LeftMenuView *demo = [[LeftMenuView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width * 0.8, [[UIScreen mainScreen] bounds].size.height)];
+    demo.customDelegate = self;
+    
+    self.menu = [[MenuView alloc]initWithDependencyView:self.view MenuView:demo isShowCoverView:YES];
+    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+-(void)LeftMenuViewClick:(NSInteger)tag{
+    [self.menu hidenWithAnimation];
+    
+    NSLog(@"tag = %lu",tag);
+    
+    if (tag == 3) {
+        [self performSegueWithIdentifier:@"toConfig" sender:self];
+    }
+}
+
+- (IBAction)leftNavAction:(id)sender {
+    [self.menu show];
+}
 
 @end
