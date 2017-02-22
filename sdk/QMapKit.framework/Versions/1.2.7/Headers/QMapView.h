@@ -155,7 +155,7 @@ typedef NS_ENUM(NSInteger, QUserTrackingMode)
  *
  * 指定后底图会尽量用指定语言显示底图标注的文字，默认采用英语
  *
- * @param lauguage 指定的语言
+ * @param language 指定的语言
  * @see QMapLanguage
  */
 - (void)setDisplayLauguage:(QMapLanguage)language;

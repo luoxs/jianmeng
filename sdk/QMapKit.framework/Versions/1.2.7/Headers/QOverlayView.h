@@ -42,9 +42,9 @@
  *  @brief  将QMapPoint转化为相对于overlayView的坐标，*trans为了弥补32位运行环境下从coordinate转换成double再转换成CGPoint造成的精度丢失, 如果没有误差那么返回的trans为CGAffineTransformIdentity
  *
  * @param mapPoint 要转化的mapPoint
- * @param transform对返回值的补充，可以用于对转换精度误差进行补偿
+ * @param transform
  *
- * @param description 用户只有在需要重载createPath的时候才会用到这个函数，比方说需要画线的时候利用该函数获取某个mapPoint所对应的point，以及获取的修正误差用的trans，然后使用CGPathMoveToPoint(thePath, &transform, point.x, point.y);来改变CGPath的起点。CGPathAddLineToPoint(thePath, &transform, point.x, point.y);来绘制。总之传入的trans可以修正CGPoint的精度不足所造成的标注抖动问题。如果您只是使用现有的QPolygonView或者QPolylineView则不需要考虑这些问题，因为系统已经为您封装好了相关问题的处理。调用该接口的时候，请不要给trans传NULL，如果你不需要考虑精度问题可以直接使用- (CGPoint)pointFromMapPoint:(QMapPoint)mapPoint
+ * @param transform 用户只有在需要重载createPath的时候才会用到这个函数，比方说需要画线的时候利用该函数获取某个mapPoint所对应的point，以及获取的修正误差用的trans，然后使用CGPathMoveToPoint(thePath, &transform, point.x, point.y);来改变CGPath的起点。CGPathAddLineToPoint(thePath, &transform, point.x, point.y);来绘制。总之传入的trans可以修正CGPoint的精度不足所造成的标注抖动问题。如果您只是使用现有的QPolygonView或者QPolylineView则不需要考虑这些问题，因为系统已经为您封装好了相关问题的处理。调用该接口的时候，请不要给trans传NULL，如果你不需要考虑精度问题可以直接使用- (CGPoint)pointFromMapPoint:(QMapPoint)mapPoint
  *
  *  @return 相对于overlayView的本地坐标
  */
