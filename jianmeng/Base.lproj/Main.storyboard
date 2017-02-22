@@ -38,7 +38,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="wWb-VK-xmU">
-                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="44V-gD-BsV">
+                        <barButtonItem key="leftBarButtonItem" image="person-icon7.png" id="44V-gD-BsV">
                             <connections>
                                 <action selector="leftNavAction:" destination="BYZ-38-t0r" id="BPU-Eo-Ta2"/>
                             </connections>
@@ -50,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-143" y="106"/>
+            <point key="canvasLocation" x="-143.19999999999999" y="105.69715142428787"/>
         </scene>
         <!--设置-->
         <scene sceneID="ovF-Ui-VW8">
@@ -208,4 +208,7 @@
             <point key="canvasLocation" x="694" y="106"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person-icon7.png" width="19" height="19"/>
+    </resources>
 </document>
