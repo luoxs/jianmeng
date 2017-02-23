@@ -49,6 +49,12 @@
 		AAE7A2991E5C1AF100550DBB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE7A2981E5C1AF100550DBB /* SystemConfiguration.framework */; };
 		AAE7A29B1E5C1B1900550DBB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE7A29A1E5C1B1900550DBB /* libz.tbd */; };
 		AAE7A2A41E5C24FD00550DBB /* QMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE7A2A21E5C24D400550DBB /* QMapKit.framework */; };
+		AAE7A2AA1E5E800B00550DBB /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE7A2A71E5E800B00550DBB /* CustomAnnotationView.m */; };
+		AAE7A2AB1E5E800B00550DBB /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE7A2A91E5E800B00550DBB /* CustomCalloutView.m */; };
+		AAE7A2AD1E5E995400550DBB /* redflag.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE7A2AC1E5E995400550DBB /* redflag.png */; };
+		AAE7A2B01E5E996C00550DBB /* tencent.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE7A2AE1E5E996C00550DBB /* tencent.png */; };
+		AAE7A2B11E5E996C00550DBB /* tiananmen.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE7A2AF1E5E996C00550DBB /* tiananmen.png */; };
+		AAE7A2B31E5EC58300550DBB /* hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE7A2B21E5EC58300550DBB /* hotel.png */; };
 		AAF78B441E5B31BF00C2E268 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF78B431E5B31BF00C2E268 /* main.m */; };
 		AAF78B471E5B31BF00C2E268 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF78B461E5B31BF00C2E268 /* AppDelegate.m */; };
 		AAF78B4A1E5B31BF00C2E268 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF78B491E5B31BF00C2E268 /* ViewController.m */; };
@@ -115,6 +121,14 @@
 		AAE7A2981E5C1AF100550DBB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AAE7A29A1E5C1B1900550DBB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		AAE7A2A21E5C24D400550DBB /* QMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QMapKit.framework; sourceTree = "<group>"; };
+		AAE7A2A61E5E800B00550DBB /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
+		AAE7A2A71E5E800B00550DBB /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
+		AAE7A2A81E5E800B00550DBB /* CustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalloutView.h; sourceTree = "<group>"; };
+		AAE7A2A91E5E800B00550DBB /* CustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalloutView.m; sourceTree = "<group>"; };
+		AAE7A2AC1E5E995400550DBB /* redflag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redflag.png; sourceTree = "<group>"; };
+		AAE7A2AE1E5E996C00550DBB /* tencent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tencent.png; sourceTree = "<group>"; };
+		AAE7A2AF1E5E996C00550DBB /* tiananmen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiananmen.png; sourceTree = "<group>"; };
+		AAE7A2B21E5EC58300550DBB /* hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotel.png; sourceTree = "<group>"; };
 		AAF78B3F1E5B31BF00C2E268 /* jianmeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jianmeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF78B431E5B31BF00C2E268 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AAF78B451E5B31BF00C2E268 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +164,10 @@
 		AAE7A1B61E5C06BE00550DBB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				AAE7A2B21E5EC58300550DBB /* hotel.png */,
+				AAE7A2AE1E5E996C00550DBB /* tencent.png */,
+				AAE7A2AF1E5E996C00550DBB /* tiananmen.png */,
+				AAE7A2AC1E5E995400550DBB /* redflag.png */,
 				AAE7A2841E5C0ADE00550DBB /* HeadIcon.imageset */,
 				AAE7A21D1E5C076300550DBB /* HomeLeftCover */,
 			);
@@ -334,6 +352,17 @@
 			path = sdk;
 			sourceTree = "<group>";
 		};
+		AAE7A2A51E5E7FA800550DBB /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				AAE7A2A61E5E800B00550DBB /* CustomAnnotationView.h */,
+				AAE7A2A71E5E800B00550DBB /* CustomAnnotationView.m */,
+				AAE7A2A81E5E800B00550DBB /* CustomCalloutView.h */,
+				AAE7A2A91E5E800B00550DBB /* CustomCalloutView.m */,
+			);
+			name = Annotation;
+			sourceTree = "<group>";
+		};
 		AAF78B361E5B31BE00C2E268 = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +371,7 @@
 				AAE7A2831E5C09A200550DBB /* cofig */,
 				AAE7A1B61E5C06BE00550DBB /* images */,
 				AAF78B591E5BE12000C2E268 /* Menu */,
+				AAE7A2A51E5E7FA800550DBB /* Annotation */,
 				AAF78B411E5B31BF00C2E268 /* jianmeng */,
 				AAF78B401E5B31BF00C2E268 /* Products */,
 				AAE7A28C1E5C196800550DBB /* Frameworks */,
@@ -450,11 +480,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAE7A2711E5C076300550DBB /* person-icon5@2x.png in Resources */,
+				AAE7A2B11E5E996C00550DBB /* tiananmen.png in Resources */,
 				AAE7A2661E5C076300550DBB /* person-icon2@3x.png in Resources */,
 				AAE7A2771E5C076300550DBB /* Contents.json in Resources */,
 				AAE7A2801E5C076300550DBB /* person-icon9.png in Resources */,
 				AAE7A2931E5C1A8C00550DBB /* QMapKit.bundle in Resources */,
 				AAE7A2741E5C076300550DBB /* person-icon6.png in Resources */,
+				AAE7A2B01E5E996C00550DBB /* tencent.png in Resources */,
 				AAE7A26A1E5C076300550DBB /* person-icon3@3x.png in Resources */,
 				AAE7A2621E5C076300550DBB /* person-icon10@3x.png in Resources */,
 				AAE7A2821E5C076300550DBB /* person-icon9@3x.png in Resources */,
@@ -464,10 +496,12 @@
 				AAE7A2641E5C076300550DBB /* person-icon2.png in Resources */,
 				AAF78B521E5B31BF00C2E268 /* LaunchScreen.storyboard in Resources */,
 				AAE7A2611E5C076300550DBB /* person-icon10@2x.png in Resources */,
+				AAE7A2B31E5EC58300550DBB /* hotel.png in Resources */,
 				AAE7A2651E5C076300550DBB /* person-icon2@2x.png in Resources */,
 				AAE7A25E1E5C076300550DBB /* person-icon1@3x.png in Resources */,
 				AAE7A25C1E5C076300550DBB /* person-icon1.png in Resources */,
 				AAE7A2791E5C076300550DBB /* person-icon7@2x.png in Resources */,
+				AAE7A2AD1E5E995400550DBB /* redflag.png in Resources */,
 				AAE7A2581E5C076300550DBB /* person-icon0.png in Resources */,
 				AAF78B4F1E5B31BF00C2E268 /* Assets.xcassets in Resources */,
 				AAE7A26C1E5C076300550DBB /* person-icon4.png in Resources */,
@@ -498,10 +532,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE7A2AB1E5E800B00550DBB /* CustomCalloutView.m in Sources */,
 				AAF78B4A1E5B31BF00C2E268 /* ViewController.m in Sources */,
 				AAF78B5C1E5BE14F00C2E268 /* MenuView.m in Sources */,
 				AAF78B471E5B31BF00C2E268 /* AppDelegate.m in Sources */,
 				AAE7A28B1E5C0E2600550DBB /* configTableViewController.m in Sources */,
+				AAE7A2AA1E5E800B00550DBB /* CustomAnnotationView.m in Sources */,
 				AAF78B5F1E5BE1D900C2E268 /* LeftMenuView.m in Sources */,
 				AAF78B441E5B31BF00C2E268 /* main.m in Sources */,
 			);
