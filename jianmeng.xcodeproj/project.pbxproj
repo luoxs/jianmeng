@@ -258,7 +258,7 @@
 		AAE7A2961E5C1AE000550DBB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AAE7A2981E5C1AF100550DBB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AAE7A29A1E5C1B1900550DBB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		AAE7A2A21E5C24D400550DBB /* QMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QMapKit.framework; sourceTree = "<group>"; };
+		AAE7A2A21E5C24D400550DBB /* QMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QMapKit.framework; path = sdk/QMapKit.framework; sourceTree = "<group>"; };
 		AAE7A2A61E5E800B00550DBB /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
 		AAE7A2A71E5E800B00550DBB /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
 		AAE7A2A81E5E800B00550DBB /* CustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalloutView.h; sourceTree = "<group>"; };
@@ -599,13 +599,13 @@
 			path = "person-icon9.imageset";
 			sourceTree = "<group>";
 		};
-		AAE7A2831E5C09A200550DBB /* cofig */ = {
+		AAE7A2831E5C09A200550DBB /* config */ = {
 			isa = PBXGroup;
 			children = (
 				AAE7A2891E5C0E2600550DBB /* configTableViewController.h */,
 				AAE7A28A1E5C0E2600550DBB /* configTableViewController.m */,
 			);
-			name = cofig;
+			name = config;
 			sourceTree = "<group>";
 		};
 		AAE7A2841E5C0ADE00550DBB /* HeadIcon.imageset */ = {
@@ -624,16 +624,9 @@
 				AAE7A2981E5C1AF100550DBB /* SystemConfiguration.framework */,
 				AAE7A2961E5C1AE000550DBB /* CoreLocation.framework */,
 				AAE7A2941E5C1AD200550DBB /* QuartzCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AAE7A2A11E5C24D400550DBB /* sdk */ = {
-			isa = PBXGroup;
-			children = (
 				AAE7A2A21E5C24D400550DBB /* QMapKit.framework */,
 			);
-			path = sdk;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AAE7A2A51E5E7FA800550DBB /* Annotation */ = {
@@ -1342,9 +1335,8 @@
 			children = (
 				AAE7A4141E5EF35600550DBB /* Pay */,
 				AAE7A2B41E5ECD3700550DBB /* HouseStatus */,
-				AAE7A2A11E5C24D400550DBB /* sdk */,
 				AAE7A2921E5C1A8C00550DBB /* QMapKit.bundle */,
-				AAE7A2831E5C09A200550DBB /* cofig */,
+				AAE7A2831E5C09A200550DBB /* config */,
 				AAE7A1B61E5C06BE00550DBB /* images */,
 				AAF78B591E5BE12000C2E268 /* Menu */,
 				AAE7A2A51E5E7FA800550DBB /* Annotation */,
@@ -1371,7 +1363,6 @@
 				AAF78B491E5B31BF00C2E268 /* ViewController.m */,
 				AAF78B4B1E5B31BF00C2E268 /* Main.storyboard */,
 				AAF78B4E1E5B31BF00C2E268 /* Assets.xcassets */,
-				AAF78B501E5B31BF00C2E268 /* LaunchScreen.storyboard */,
 				AAF78B531E5B31BF00C2E268 /* Info.plist */,
 				AAF78B421E5B31BF00C2E268 /* Supporting Files */,
 			);
@@ -1381,6 +1372,7 @@
 		AAF78B421E5B31BF00C2E268 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AAF78B501E5B31BF00C2E268 /* LaunchScreen.storyboard */,
 				AAF78B431E5B31BF00C2E268 /* main.m */,
 			);
 			name = "Supporting Files";
