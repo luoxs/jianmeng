@@ -27,9 +27,9 @@
     [super viewDidLoad];
     
     [self.view setBackgroundColor:[UIColor lightGrayColor]];
-    LeftMenuView *demo = [[LeftMenuView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width * 0.8, [[UIScreen mainScreen] bounds].size.height)];
-    demo.customDelegate = self;
-    self.menu = [[MenuView alloc]initWithDependencyView:self.view MenuView:demo isShowCoverView:YES];
+    LeftMenuView *menuView = [[LeftMenuView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width * 0.7, [[UIScreen mainScreen] bounds].size.height)];
+    menuView.customDelegate = self;
+    self.menu = [[MenuView alloc]initWithDependencyView:self.view MenuView:menuView isShowCoverView:YES];
     
     [self initMap];
 }
