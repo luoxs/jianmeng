@@ -30,7 +30,9 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
    // cell.label.text = [NSString stringWithFormat:@"{%ld,%ld}", (long)indexPath.row, (long)indexPath.section];
     
     // load the image for this cell
-    NSString *imageToLoad = [NSString stringWithFormat:@"%ld.jpg", (long)indexPath.row];
+    //NSString *imageToLoad = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
+    //NSString *imageToLoad = [NSString stringWithFormat:@"%ld.jpg", (long)indexPath.row];
+    NSString *imageToLoad = [NSString stringWithFormat:@"house.png"];
     cell.image.image = [UIImage imageNamed:imageToLoad];
     
     return cell;
@@ -45,6 +47,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
         NSIndexPath *selectedIndexPath = [self.collectionView indexPathsForSelectedItems][0];
         
         // load the image, to prevent it from being cached we use 'initWithContentsOfFile'
+        //NSString *imageNameToLoad = [NSString stringWithFormat:@"%ld_full", (long)selectedIndexPath.row];
         NSString *imageNameToLoad = [NSString stringWithFormat:@"%ld_full.jpg", (long)selectedIndexPath.row];
         UIImage *image = [UIImage imageNamed:imageNameToLoad];
         DetailViewController *detailViewController = segue.destinationViewController;

@@ -36,10 +36,12 @@
 
 -(void)setTitle:(NSString *)title {
     _labelTitle.text = title;
+    _labelTitle.font = [UIFont systemFontOfSize:17];
 }
 
 -(void)setSubtitle:(NSString *)subtitle {
     _labelSubtitle.text = subtitle;
+    _labelSubtitle.font = [UIFont systemFontOfSize:13];
 }
 
 -(void)setImage:(UIImage *)image {

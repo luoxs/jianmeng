@@ -189,6 +189,10 @@
 		AAE7A40B1E5ED09200550DBB /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = AAE7A3881E5ED09100550DBB /* Contents.json */; };
 		AAE7A40C1E5ED09200550DBB /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAE7A38A1E5ED09100550DBB /* 9.jpg */; };
 		AAE7A40D1E5ED09200550DBB /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = AAE7A38B1E5ED09100550DBB /* Contents.json */; };
+		AAE7A40F1E5EE7E300550DBB /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE7A40E1E5EE7E300550DBB /* house.png */; };
+		AAE7A4111E5EF17C00550DBB /* alipay.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE7A4101E5EF17C00550DBB /* alipay.png */; };
+		AAE7A4131E5EF18500550DBB /* weixin.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE7A4121E5EF18500550DBB /* weixin.png */; };
+		AAE7A4171E5EF38D00550DBB /* SelectPayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE7A4161E5EF38D00550DBB /* SelectPayTableViewController.m */; };
 		AAF78B441E5B31BF00C2E268 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF78B431E5B31BF00C2E268 /* main.m */; };
 		AAF78B471E5B31BF00C2E268 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF78B461E5B31BF00C2E268 /* AppDelegate.m */; };
 		AAF78B4A1E5B31BF00C2E268 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF78B491E5B31BF00C2E268 /* ViewController.m */; };
@@ -401,6 +405,11 @@
 		AAE7A3881E5ED09100550DBB /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		AAE7A38A1E5ED09100550DBB /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		AAE7A38B1E5ED09100550DBB /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		AAE7A40E1E5EE7E300550DBB /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		AAE7A4101E5EF17C00550DBB /* alipay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alipay.png; sourceTree = "<group>"; };
+		AAE7A4121E5EF18500550DBB /* weixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weixin.png; sourceTree = "<group>"; };
+		AAE7A4151E5EF38D00550DBB /* SelectPayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPayTableViewController.h; sourceTree = "<group>"; };
+		AAE7A4161E5EF38D00550DBB /* SelectPayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPayTableViewController.m; sourceTree = "<group>"; };
 		AAF78B3F1E5B31BF00C2E268 /* jianmeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jianmeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF78B431E5B31BF00C2E268 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AAF78B451E5B31BF00C2E268 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -436,6 +445,9 @@
 		AAE7A1B61E5C06BE00550DBB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				AAE7A4121E5EF18500550DBB /* weixin.png */,
+				AAE7A4101E5EF17C00550DBB /* alipay.png */,
+				AAE7A40E1E5EE7E300550DBB /* house.png */,
 				AAE7A2B21E5EC58300550DBB /* hotel.png */,
 				AAE7A2AE1E5E996C00550DBB /* tencent.png */,
 				AAE7A2AF1E5E996C00550DBB /* tiananmen.png */,
@@ -1316,9 +1328,19 @@
 			path = 9.imageset;
 			sourceTree = "<group>";
 		};
+		AAE7A4141E5EF35600550DBB /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				AAE7A4151E5EF38D00550DBB /* SelectPayTableViewController.h */,
+				AAE7A4161E5EF38D00550DBB /* SelectPayTableViewController.m */,
+			);
+			name = Pay;
+			sourceTree = "<group>";
+		};
 		AAF78B361E5B31BE00C2E268 = {
 			isa = PBXGroup;
 			children = (
+				AAE7A4141E5EF35600550DBB /* Pay */,
 				AAE7A2B41E5ECD3700550DBB /* HouseStatus */,
 				AAE7A2A11E5C24D400550DBB /* sdk */,
 				AAE7A2921E5C1A8C00550DBB /* QMapKit.bundle */,
@@ -1514,6 +1536,7 @@
 				AAE7A3CC1E5ED09100550DBB /* Contents.json in Resources */,
 				AAE7A3DD1E5ED09100550DBB /* Contents.json in Resources */,
 				AAE7A3A41E5ED09100550DBB /* 20_full.jpg in Resources */,
+				AAE7A4131E5EF18500550DBB /* weixin.png in Resources */,
 				AAE7A3951E5ED09100550DBB /* Contents.json in Resources */,
 				AAE7A39C1E5ED09100550DBB /* 17_full.jpg in Resources */,
 				AAE7A3FE1E5ED09100550DBB /* 30.jpg in Resources */,
@@ -1527,6 +1550,7 @@
 				AAE7A25E1E5C076300550DBB /* person-icon1@3x.png in Resources */,
 				AAE7A25C1E5C076300550DBB /* person-icon1.png in Resources */,
 				AAE7A3F81E5ED09100550DBB /* 28.jpg in Resources */,
+				AAE7A4111E5EF17C00550DBB /* alipay.png in Resources */,
 				AAE7A3AC1E5ED09100550DBB /* 24_full.jpg in Resources */,
 				AAE7A3AF1E5ED09100550DBB /* Contents.json in Resources */,
 				AAE7A3DB1E5ED09100550DBB /* Contents.json in Resources */,
@@ -1569,6 +1593,7 @@
 				AAE7A40A1E5ED09200550DBB /* 8.jpg in Resources */,
 				AAE7A26D1E5C076300550DBB /* person-icon4@2x.png in Resources */,
 				AAE7A2601E5C076300550DBB /* person-icon10.png in Resources */,
+				AAE7A40F1E5EE7E300550DBB /* house.png in Resources */,
 				AAE7A27C1E5C076300550DBB /* person-icon8.png in Resources */,
 				AAE7A3FF1E5ED09100550DBB /* Contents.json in Resources */,
 				AAE7A2701E5C076300550DBB /* person-icon5.png in Resources */,
@@ -1625,6 +1650,7 @@
 				AAE7A2C61E5ECF7900550DBB /* HouseStatuViewController.m in Sources */,
 				AAE7A2AA1E5E800B00550DBB /* CustomAnnotationView.m in Sources */,
 				AAE7A2C31E5ECF5A00550DBB /* DetailViewController.m in Sources */,
+				AAE7A4171E5EF38D00550DBB /* SelectPayTableViewController.m in Sources */,
 				AAF78B5F1E5BE1D900C2E268 /* LeftMenuView.m in Sources */,
 				AAE7A2C21E5ECF5A00550DBB /* CustomCellBackground.m in Sources */,
 				AAF78B441E5B31BF00C2E268 /* main.m in Sources */,
